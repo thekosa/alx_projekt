@@ -1,0 +1,184 @@
+    1  cd Desktop/
+    2  mkdir projecto1
+    3  cd projecto1/
+    4  git init
+    5  git status 
+    6  touch plik.txt
+    7  git status
+    8  git config --global user.email "mkosieradzki@testroniclabs.com"
+    9  git config --global user.name "Kosecki"
+   10  git add plik.txt 
+   11  git commit
+   12  git status
+   13  history 
+   14  git status
+   15  git add plik.txt 
+   16  git commit -m "coś o psie"
+   17  git log 
+   18  touch ala.txt
+   19  touch basia.txt
+   20  git add *
+   21  git status
+   22  git commit -m "
+Nowe pliki"
+   23  git log
+   24  git status
+   25  git status
+   26  git add ala.txt basia.txt 
+   27  git commit  -m "ala i basia - dodanie tresci"
+   28  git commit -m "Nazwy zwieżąd" plik.txt 
+   29  git log --oneline
+   30  git commit --amend -m "Imiona zwierząt" plik.txt 
+   31  git log
+   32  git log --oneline
+   33  git log --oneline --reflog
+   34  git log --reflog
+   35  git status
+   36  git commit -a -m "commit z apcją a"
+   37  git log --oneline
+   38  git sta
+   39  git status 
+   40  git add .
+   41  git commit -m "Zmiany razem :P"
+   42  for i in 1 2 3; do touch  a/b/c/plik$i; done
+   43  mkdir -p a/b/c
+   44  for i in 1 2 3; do touch  a/b/c/plik$i; done
+   45  git add a
+   46  git status
+   47  git restore --staged a
+   48  git status 
+   49  git status -u
+   50  git add a/b/c/plik1 a/b/c/plik2
+   51  git commit podkatalog
+   52  git commit -m podkatalog
+   53  git add a/b/c/plik3 
+   54  git commit -m podkatalog3
+   55  git mv ala.txt alicja.txt
+   56  git status 
+   57  git commit -m "zmiana nazwy pliku"
+   58  git rm --cached celina.txt 
+   59  git status 
+   60  git commit -m "jakieś usuniecei"
+   61  git log
+   62  git checkout fbd9d2eb4c0f38f882037d04e29867f74d52edb3
+   63  git status
+   64  git log
+   65  git log --oneline --refloh
+   66  git log --oneline --reflog 
+   67  git checkout master 
+   68  git checkout fbd9d2eb4c0f38f882037d04e29867f74d52edb3
+   69  git commit -m dziwne plik.txt 
+   70  git checkout master
+   71  git log --oneline --reflog 
+   72  git switch master 
+   73  git checkout eea5274
+   74  git switch master
+   75  git log
+   76  git log --reflog --oneline
+   77  git checkout d4ad9e5
+   78  git checkout --force d4ad9e5
+   79  git switch master
+   80  git branc
+   81  git branch 
+   82  git switch -c develop
+   83  git status
+   84  touch ola.txt
+   85  git add ola.txt 
+   86  git commit -m "dodana ola"
+   87  git add .
+   88  git commit -m "dalsze developowanie"
+   89  git switch master 
+   90  git log --oneline
+   91  git switch develop 
+   92  git log --oneline
+   93  git switch master
+   94  git branch
+   95  git commit -am "zmiana nr1 w master"
+   96  git status
+   97  git add main.txt 
+   98  git  commit -m "Dodanie main"
+   99  git branch
+  100  git commit -m "Dalsze developwoanie" plik.txt 
+  101  git switch master 
+  102  git commit -m "biały kot?" plik.txt 
+  103  git status
+  104  git merge develop 
+  105  git branch
+  106  git commit -a -m "main po mergu"
+  107  git switch develop 
+  108  git merge master 
+  109  GIT COMMIT -m "develop konfliktueje" plik.txt 
+  110  GIT commit -m "develop konfliktueje" plik.txt 
+  111  git commit -a -m "Master konfliktuje"
+  112  git merge develop 
+  113  git status
+  114  git add plik.txt 
+  115  git commit 
+  116  git switch develop 
+  117  git merge master 
+  118  cd d
+  119  touch dwa.txt
+  120  touch trzy.txt
+  121  cd ..
+  122  git add dwa.txt
+  123  git add d
+  124  git commit -m "dev 1"
+  125  git switch master 
+  126  mkdir m
+  127  cd m 
+  128  touch jeden.txt
+  129  touch dwa.txt
+  130  cd ..
+  131  git add .
+  132  git commit -m "master 1"
+  133  git switch develop 
+  134  git switch master
+  135  git switch develop 
+  136  git rebase master
+  137  git switch master 
+  138  git switch develop 
+  139  git switch master 
+  140  git merge develop 
+  141  git commit -m "master konflikt" plik.txt 
+  142  git switch develop 
+  143  git commit -m "develop konflikt" plik.txt 
+  144  git status 
+  145  git rebase master 
+  146  git add plik.txt 
+  147  git rebase --continue
+  148  git switch master 
+  149  git merge develop 
+  150  git commit -m pon historia.txt 
+  151  git commit -m wto historia.txt 
+  152  git status
+  153  git commit -m wto historia.txt 
+  154  git add historia.txt 
+  155  git commit -m pon
+  156  git commit -m wto historia.txt 
+  157  git commit -m sro historia.txt 
+  158  git commit -m czw historia.txt 
+  159  git checkout HEAD~3
+  160  git switch master 
+  161  git log --oneline
+  162  git reset --hard 9c16baa
+  163  git commit -m sro_alt historia.txt 
+  164  git reset 9c16baa
+  165  git status
+  166  git restore .
+  167  git log --reflog --oneline
+  168  git reset --hard 7cef105
+  169  git revert 7cef105
+  170  git commit -m czw historia.txt 
+  171  git remote
+  172  git remote add origin https://github.com/thekosa/alx_projekt.git
+  173  git remote
+  174  git push origin master
+  175  git add historia.txt 
+  176  git commit -m pia
+  177  git push -u origin master
+  178  git commit -m sob historia.txt 
+  179  git push 
+  180  git pull
+  181  git push -u origin --all
+  182  history 
+  183  history > historia_komend.txt
