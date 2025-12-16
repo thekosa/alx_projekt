@@ -4,3 +4,4 @@ tu nie ma celiny MASTERODEVELOP
 czwarta linia
 develpujemy dalej
 wersja master poprawiona
+Edycja na githbuie
