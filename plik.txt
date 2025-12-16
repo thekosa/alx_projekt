@@ -3,3 +3,4 @@ ola ma psa Toto!
 tu nie ma celiny MASTERODEVELOP
 czwarta linia
 develpujemy dalej
+wersja master
